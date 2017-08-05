@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@font-face {
+	font-family: 'proximanova';
+	src:url("../fonts/Proxima Nova Regular.otf");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #464f54;
+	position: relative;
+	padding-top: 150px;
+}
+
+.editor{
+	position: absolute;
+	top: 45px;
+	right: 0;
+	width: 70%;
+}
+
+.editor_area{
+	background: #181818;
+	padding: 80px 0 80px 80px;
+	box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.8);
+}
+
+.editor_title{
+	display: block;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: proximanova, sans-serif;
+	letter-spacing: 3px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.editor_input{
+	display: block;
+	background: transparent;
+	border:0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	width: 100%;
+	padding: 0 10px 10px 0;
+	outline: 0;
+	font-size: 48px;
+	font-family: 'Playfair Display', serif;
+	color: #fefefe;
+}
+
+.editor_tools{
+	background: #f7bd2c;
+	margin-left: 50px;
+	box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.8);
+	
+}
+
+.icon{
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center; 
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	fill: #FFFFFF;
+}
+
+.icon--1{
+	background-image: url(img/007-font.svg); 
+}
+
+.icon--2{
+	background-image: url(img/005-capitals.svg); 
+}
+
+.icon--3{
+	background-image: url(img/001-italic.svg); 
+}
+
+.icon--4{
+	background-image: url(img/008-bold.svg); 
+}
+
+.icon--5 {
+	background-image: url(img/006-underline.svg); 
+}
+
+.editor_tools ul{
+	font-size: 0;
+	padding: 0 0 0 30px;
+}
+
+.editor_tools ul li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+	opacity: 0.6;
+}
+
+.editor_tools ul li:hover,
+.editor_tools ul li:focus,
+.editor_tools ul li active {
+	opacity: 1;
+}
+
+
+main{
+	margin: 0 5%;
+	background: #fff;
+	box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.8);
+}
+
+.post{
+	margin-left: 65px;
+	border-left: 2px solid rgba(0, 0, 0, 0.1);
+	padding: 250px 130px 190px 65px;	
+}
+
+.post__author{
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+}
+
+.post__title{
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 1);
+	font-size: 78px;
+	margin: 50px 0 5px 0;
+}
+
+.post__subtitle{
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 50px;
+	font-size: 30px;
+}
+
+.post__text{
+	font-size: 27px;
+	font-family: Georgia, serif;
+	line-height: 1.6; 
+}
+
